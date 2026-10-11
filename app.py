@@ -18,7 +18,7 @@ warnings.filterwarnings("ignore", category=InconsistentVersionWarning)
 MODEL_PATH = Path(__file__).parent / "diabetes_rf_model.joblib"
 
 st.set_page_config(
-    page_title="GlucoSense · Diabetes Risk AI",
+    page_title="Diabetes Prediction App",
     page_icon="🩸",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -195,7 +195,7 @@ def main():
     init_state(artifact)
 
     with st.sidebar:
-        st.markdown("## 🩸 GlucoSense")
+        st.markdown("## 🩸 Diabetes Prediction")
         st.caption("Random Forest diabetes risk estimator")
         st.markdown("### 📊 Model card")
         m1, m2 = st.columns(2)
