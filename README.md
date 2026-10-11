@@ -12,7 +12,7 @@ A Streamlit web app that predicts diabetes risk using a tuned Random Forest clas
 
 ## Model
 
-The model is trained in [RF_model.ipynb](RF_model.ipynb):
+The model is trained in [RF_model.ipynb](https://colab.research.google.com/drive/10poAXmlHj-fP1cAlBLJkey2IFbWQ4ID2?usp=sharing):
 
 - `RandomForestClassifier` inside a scikit-learn `Pipeline` with a `ColumnTransformer` (numeric passthrough + ordinal-encoded categoricals)
 - Hyperparameters tuned with `RandomizedSearchCV` and 5-fold stratified CV
